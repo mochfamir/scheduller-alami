@@ -1,0 +1,19 @@
+{
+  "name": "scheduller-alami",
+  "version": "1.0.0",
+  "description": "Scheduller untuk mendapatkan list pendanaan ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.4",
+    "cheerio": "^1.0.0-rc.10",
+    "node-cron": "^3.0.0"
+  },
+  "devDependencies": {
+    "local-web-server": "2.5.0"
+  }
+}

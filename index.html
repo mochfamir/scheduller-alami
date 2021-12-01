@@ -1,0 +1,2915 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+<html lang="en">
+<!-- lenderv2/lender-book-now.jsp -->
+
+<head>
+	<meta charset="utf-8">
+	<title>Alami - Dashboard</title>
+	<!-- Google Tag Manager -->
+	<script>
+		(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-P68F6QM');
+	</script>
+	<!-- End Google Tag Manager -->
+	<meta http-equiv="cache-control" content="max-age=0" />
+	<meta http-equiv="cache-control" content="no-cache" />
+	<meta http-equiv="expires" content="0" />
+	<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" type="image/png" href="/resources/lenderv2/images/favicon.png" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+		integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/0.9.3/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css"
+		href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.min.css">
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/components/icon.min.css">
+	<!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">-->
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/flag.min.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+	<link href="/resources/beneficiary/vendor/datatable-responsive/2.2.3/css/responsive.bootstrap4.min.css"
+		rel="stylesheet">
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+	<link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css"
+		rel="stylesheet">
+
+	<link href="/resources/plugins/jquery-steps/jquery.steps.css" rel="stylesheet">
+	<link rel="stylesheet" media="(max-width: 991px)" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/slidebars/2.0.2/slidebars.min.css">
+	<link rel="stylesheet" href="/resources/arch/css/custom-v2.css?202109231334">
+
+	<link rel="stylesheet" type="text/css" href="/resources/lenderv2/css/preview-document.css?202109231334" />
+	<link rel="stylesheet" type="text/css" href="/resources/lenderv2/css/style.css?202109231334" />
+	<link rel="stylesheet" type="text/css" href="/resources/lenderv2/css/custom.css?202109231334" />
+	<link rel="stylesheet" type="text/css" href="/resources/lenderv2/css/projectx.css?202109231334" />
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138595448-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-138595448-1', {
+                'user_id': '2c9180827984d5210179896e9c30075b'
+            });
+	</script>
+</head>
+<!-- check user and verify status -->
+
+
+
+
+
+
+<body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P68F6QM" height="0" width="0"
+			style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<style type="text/css">
+		.control-board {
+			position: relative;
+		}
+
+		body {
+			color: #025a78;
+		}
+
+		#right-container-content {
+			background: #f0f7f9;
+		}
+
+		.h1,
+		.h2,
+		.h3,
+		.h4,
+		.h5,
+		.h6,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			color: #025a78;
+			font-weight: 600;
+		}
+
+		.bg-primary {
+			color: white;
+		}
+
+		.red .h1,
+		.red .h2,
+		.red .h3,
+		.red .h4,
+		.red .h5,
+		.red .h6,
+		.red h1,
+		.red h2,
+		.red h3,
+		.red h4,
+		.red h5,
+		.red h6 {
+			color: white;
+		}
+
+		.custom-notification-width {
+			width: 20px;
+			height: 20px;
+			border-radius: 15px;
+			background: #cb891f;
+			font-size: 13px;
+			color: white;
+			margin-left: -10px;
+			margin-top: -4px;
+			position: absolute;
+			padding: 3px;
+		}
+
+		#mobile-navbar-bot {
+			z-index: 12;
+			width: 100%;
+			background: #ffffff;
+			box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05) !important;
+		}
+
+		.notification-header {
+			position: absolute;
+			top: 48px;
+			width: 100%;
+		}
+
+		.notificationSelect:hover {
+			text-decoration: underline !important;
+			cursor: pointer;
+		}
+
+		#notification ul {
+			max-height: 80%;
+			overflow-y: auto;
+		}
+
+		.see-all-notification {
+			text-align: center;
+			width: 100%;
+			display: block;
+			padding: 5px;
+			cursor: pointer;
+			margin-top: -17px;
+		}
+
+		.see-all-notification:hover {
+			background: #013c50 !important;
+			color: #fff !important;
+			-moz-transition: all 0.2s ease-in;
+			/* WebKit */
+			-webkit-transition: all 0.3s ease-in;
+			/* Opera */
+			-o-transition: all 0.3s ease-in;
+			/* Standard */
+			transition: all 0.3s ease-in;
+		}
+
+		.elemen-profile-container {
+			z-index: 10
+		}
+
+		.element-mobile {
+			display: none !important;
+		}
+
+		@media (min-width: 992px) {
+			#notification ul {
+				max-height: 300px;
+				overflow-y: auto;
+			}
+
+			.logo-icon-header {
+				padding-left: 100px;
+			}
+
+			.control-board {
+				position: fixed;
+			}
+
+			.logo-icon-header {
+				padding-left: 100px;
+			}
+
+			.control-board {
+				position: fixed;
+			}
+
+			.div-mobile-report-currency {
+				display: none;
+			}
+		}
+
+		@media (max-width: 992px) {
+			#notification ul {
+				max-height: calc(100% - 48px - 57px - 48px - 28px);
+				overflow-y: auto;
+			}
+
+			.div-desktop-report-currency {
+				display: none;
+			}
+
+			.div-mobile-report-currency {
+				display: block;
+			}
+
+			.element-mobile {
+				display: block !important;
+			}
+
+			.info-app>a>span {
+				display: none;
+			}
+
+			.top-menu-pusher {
+				height: 50px;
+			}
+		}
+
+		.ti-bell-custom {
+			display: inline-block
+		}
+
+		.ti-bell:hover {
+			display: inline-block;
+			-webkit-animation: ring 12s .01s ease-in-out infinite;
+			-webkit-transform-origin: 50% 4px;
+			-moz-animation: ring 12s .01s ease-in-out infinite;
+			-moz-transform-origin: 50% 4px;
+			animation: ring 12s .01s ease-in-out infinite;
+			transform-origin: 50% 4px;
+		}
+
+		@-webkit-keyframes ring {
+			0% {
+				-webkit-transform: rotateZ(0);
+			}
+
+			1% {
+				-webkit-transform: rotateZ(30deg);
+			}
+
+			3% {
+				-webkit-transform: rotateZ(-28deg);
+			}
+
+			5% {
+				-webkit-transform: rotateZ(34deg);
+			}
+
+			7% {
+				-webkit-transform: rotateZ(-32deg);
+			}
+
+			9% {
+				-webkit-transform: rotateZ(30deg);
+			}
+
+			11% {
+				-webkit-transform: rotateZ(-28deg);
+			}
+
+			13% {
+				-webkit-transform: rotateZ(26deg);
+			}
+
+			15% {
+				-webkit-transform: rotateZ(-24deg);
+			}
+
+			17% {
+				-webkit-transform: rotateZ(22deg);
+			}
+
+			19% {
+				-webkit-transform: rotateZ(-20deg);
+			}
+
+			21% {
+				-webkit-transform: rotateZ(18deg);
+			}
+
+			23% {
+				-webkit-transform: rotateZ(-16deg);
+			}
+
+			25% {
+				-webkit-transform: rotateZ(14deg);
+			}
+
+			27% {
+				-webkit-transform: rotateZ(-12deg);
+			}
+
+			29% {
+				-webkit-transform: rotateZ(10deg);
+			}
+
+			31% {
+				-webkit-transform: rotateZ(-8deg);
+			}
+
+			33% {
+				-webkit-transform: rotateZ(6deg);
+			}
+
+			35% {
+				-webkit-transform: rotateZ(-4deg);
+			}
+
+			37% {
+				-webkit-transform: rotateZ(2deg);
+			}
+
+			39% {
+				-webkit-transform: rotateZ(-1deg);
+			}
+
+			41% {
+				-webkit-transform: rotateZ(1deg);
+			}
+
+			43% {
+				-webkit-transform: rotateZ(0);
+			}
+
+			100% {
+				-webkit-transform: rotateZ(0);
+			}
+		}
+
+		@-moz-keyframes ring {
+			0% {
+				-moz-transform: rotate(0);
+			}
+
+			1% {
+				-moz-transform: rotate(30deg);
+			}
+
+			3% {
+				-moz-transform: rotate(-28deg);
+			}
+
+			5% {
+				-moz-transform: rotate(34deg);
+			}
+
+			7% {
+				-moz-transform: rotate(-32deg);
+			}
+
+			9% {
+				-moz-transform: rotate(30deg);
+			}
+
+			11% {
+				-moz-transform: rotate(-28deg);
+			}
+
+			13% {
+				-moz-transform: rotate(26deg);
+			}
+
+			15% {
+				-moz-transform: rotate(-24deg);
+			}
+
+			17% {
+				-moz-transform: rotate(22deg);
+			}
+
+			19% {
+				-moz-transform: rotate(-20deg);
+			}
+
+			21% {
+				-moz-transform: rotate(18deg);
+			}
+
+			23% {
+				-moz-transform: rotate(-16deg);
+			}
+
+			25% {
+				-moz-transform: rotate(14deg);
+			}
+
+			27% {
+				-moz-transform: rotate(-12deg);
+			}
+
+			29% {
+				-moz-transform: rotate(10deg);
+			}
+
+			31% {
+				-moz-transform: rotate(-8deg);
+			}
+
+			33% {
+				-moz-transform: rotate(6deg);
+			}
+
+			35% {
+				-moz-transform: rotate(-4deg);
+			}
+
+			37% {
+				-moz-transform: rotate(2deg);
+			}
+
+			39% {
+				-moz-transform: rotate(-1deg);
+			}
+
+			41% {
+				-moz-transform: rotate(1deg);
+			}
+
+			43% {
+				-moz-transform: rotate(0);
+			}
+
+			100% {
+				-moz-transform: rotate(0);
+			}
+		}
+
+		@keyframes ring {
+			0% {
+				transform: rotate(0);
+			}
+
+			1% {
+				transform: rotate(30deg);
+			}
+
+			3% {
+				transform: rotate(-28deg);
+			}
+
+			5% {
+				transform: rotate(34deg);
+			}
+
+			7% {
+				transform: rotate(-32deg);
+			}
+
+			9% {
+				transform: rotate(30deg);
+			}
+
+			11% {
+				transform: rotate(-28deg);
+			}
+
+			13% {
+				transform: rotate(26deg);
+			}
+
+			15% {
+				transform: rotate(-24deg);
+			}
+
+			17% {
+				transform: rotate(22deg);
+			}
+
+			19% {
+				transform: rotate(-20deg);
+			}
+
+			21% {
+				transform: rotate(18deg);
+			}
+
+			23% {
+				transform: rotate(-16deg);
+			}
+
+			25% {
+				transform: rotate(14deg);
+			}
+
+			27% {
+				transform: rotate(-12deg);
+			}
+
+			29% {
+				transform: rotate(10deg);
+			}
+
+			31% {
+				transform: rotate(-8deg);
+			}
+
+			33% {
+				transform: rotate(6deg);
+			}
+
+			35% {
+				transform: rotate(-4deg);
+			}
+
+			37% {
+				transform: rotate(2deg);
+			}
+
+			39% {
+				transform: rotate(-1deg);
+			}
+
+			41% {
+				transform: rotate(1deg);
+			}
+
+			43% {
+				transform: rotate(0);
+			}
+
+			100% {
+				transform: rotate(0);
+			}
+		}
+	</style>
+
+
+
+
+
+
+	<div id="mobile-navbar" class="position-fixed text-white flex-shrink-0">
+		<div class="d-flex flex-row align-items-center">
+			<span class="info-app">
+            <a href="https://bit.ly/ALAMIApps">
+                <img src="/resources/lenderv2/images/app-logo.svg">
+                <span>Download ALAMI Mobile App</span>
+			</a>
+			</span>
+			<div class="mobile-navbar-btn order-lg-1 notification-btn">
+				<ul class="list-unstyled d-flex text-uppercase m-0">
+					<li><a class="text-alfa py-2 px-3 bell-icon d-block"
+							href="#"><img src="/resources/lenderv2/images/bedug.png"><span class="badge custom-notification-width" id="countNotification"></span></a>
+					</li>
+				</ul>
+			</div>
+			<div class="flex-grow-1 text-center logo-icon-header order-lg-0">
+				<a href="/funder/dashboard">
+					<img src="/resources/lenderv2/images/ALAMI BLUE.png">
+            </a>
+			</div>
+			<div class="mobile-navbar-btn order-lg-2 dashboard-menu-btn">
+				<ul class="list-unstyled d-flex text-uppercase m-0">
+					<li>
+						<a class="text-alfa py-2 px-3 settings-icon d-block" href="#">
+							<svg xmlns="http://www.w3.org/2000/svg" width="19.286" height="20" viewBox="0 0 19.286 20">
+								<g id="setting" transform="translate(22736 -4076)">
+									<path id="Path_418" data-name="Path 418"
+										d="M3.5,5.283A2.551,2.551,0,0,0,5.971,3.019H19.928a.378.378,0,0,0,0-.755H5.971A2.551,2.551,0,0,0,3.5,0,2.577,2.577,0,0,0,1,2.641,2.577,2.577,0,0,0,3.5,5.283ZM3.5.755A1.84,1.84,0,0,1,5.286,2.641,1.84,1.84,0,0,1,3.5,4.528,1.84,1.84,0,0,1,1.714,2.641,1.84,1.84,0,0,1,3.5.755Z"
+										transform="translate(-22737 4076)" fill="#003e6b" />
+									<path id="Path_419" data-name="Path 419"
+										d="M17.786,42a2.551,2.551,0,0,0-2.471,2.264H1.357a.378.378,0,0,0,0,.755H15.314a2.551,2.551,0,0,0,2.471,2.264,2.646,2.646,0,0,0,0-5.283Zm0,4.528a1.89,1.89,0,1,1,1.786-1.887A1.84,1.84,0,0,1,17.786,46.528Z"
+										transform="translate(-22737 4048.717)" fill="#003e6b" />
+									<path id="Path_420" data-name="Path 420"
+										d="M19.928,23.006H13.274a2.633,2.633,0,0,0-2.557-2.42,2.634,2.634,0,0,0-2.557,2.42h-6.8a.378.378,0,0,0,0,.755H8.182a2.622,2.622,0,0,0,2.535,2.264,2.622,2.622,0,0,0,2.535-2.264h6.677a.378.378,0,0,0,0-.755Zm-9.212,2.264a1.968,1.968,0,0,1,0-3.93,1.968,1.968,0,0,1,0,3.93Z"
+										transform="translate(-22737 4062.622)" fill="#003e6b" />
+								</g>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+	<style type="text/css">
+		#myTab span {
+			font-size: 1.8em;
+			color: #025a78 !important
+		}
+
+		#myTab a {
+			cursor: pointer
+		}
+
+		.container-menu-mobile {
+			z-index: 12;
+			width: 100%;
+			background: #ffffff;
+			box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05) !important;
+			bottom: 0
+		}
+	</style>
+	<div class="d-lg-none custom-hide position-fixed container-menu-mobile">
+
+		<div class="tab-content pb-0" id="myTabContent">
+			<!--<div class="tab-pane parentmenu" id="profile" role="tabpanel" aria-labelledby="profile">-->
+			<div id="profile" class="collapse">
+				<ul class="nav row no-gutters mobile-sub-menu">
+					<li class="nav-item col-6 text-center small">
+						<a class="nav-link py-3 main-menu" href="/funder/list-investments"
+							parentmenu="profile">Transaksi Berjalan</a>
+					</li>
+					<li class="nav-item col-6 text-center small">
+						<a class="nav-link py-3 main-menu" href="/funder/list-past-investments"
+							parentmenu="profile">Riwayat Transaksi</a>
+					</li>
+				</ul>
+			</div>
+			<div class="tab-pane" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+				<ul class="nav row no-gutters mobile-sub-menu">
+					<li class="nav-item col-6 text-center small">
+						<a class="nav-link py-3" href="#">Your Link</a>
+					</li>
+					<li class="nav-item col-6 text-center small">
+						<a class="nav-link py-3" href="#">Your Link</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<ul class="nav row no-gutters border-top mobile-menu" id="myTab" role="tablist">
+			<li class="nav-item col-6 text-center border-right">
+				<a class="nav-link py-3 parentmenu" id="home-tab" data-toggle="tabpanel" href="/funder/dashboard"
+					role="tabpanel" aria-controls="home" aria-selected="true">
+					<span class="ti-agenda"></span>
+				</a>
+			</li>
+			<li class="nav-item col-6 text-center">
+				<!--<a class="nav-link py-3 parentmenu" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">-->
+				<a data-toggle="collapse" class="nav-link py-3" data-target="#profile">
+					<span class="ti-bar-chart"></span>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<!-- 
+        <div id="mobile-navbar-bot" class="fixed-bottom navbar-light text-white flex-shrink-0">
+            <div class="d-flex flex-row align-items-center" style="width: 100%">
+                <div class="mobile-navbar-btn order-lg-1" style="text-align: center;margin:0 auto;left: 0;right: 0">
+                    <ul class="list-unstyled d-flex text-uppercase m-0" role="tablist">
+                        <li style="margin: 0 auto;left: 0;right: 0;"><a class="text-alfa py-2 px-3 d-block" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><span class="ti-book" style="font-weight: 600;font-size:16px"></span></a></li>
+                        <li style="margin: 0 auto;left: 0;right: 0;"><a class="text-alfa py-2 px-3 d-block" href="/funder/list-investments"><span class="ti-archive" style="font-weight: 600;font-size:16px"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div> -->
+	<div id="notification" off-canvas="notification left overlay" class="border-right">
+		<div class="top-menu-pusher flex-shrink-0"></div>
+		<ul class="list-unstyled notification-container" style="margin-top: 49px;" id="notificationResult">
+			<li class="bg-primary text-delta text-uppercase notification-header">Notifikasi</li>
+		</ul>
+		<div class=""><a onClick="seeAllNotification()" class="see-all-notification">Lihat Semua Notifikasi</a></div>
+	</div>
+	<div id="dashboard-menu" off-canvas="dashboard-menu right overlay">
+		<div class="top-menu-pusher flex-shrink-0"></div>
+		<ul class="list-unstyled dashboard-menu-container m-0">
+			<li class="">
+				<a href="javascript:void(0)" onclick="languageChange(this)" data-locale="en" class="d-block">
+					<div class="d-flex">
+						<div class="db-icon">
+							<i class="us flag"></i>
+						</div>
+						<div>Inggris</div>
+					</div>
+				</a>
+			</li>
+			<li class="active-menu">
+				<a href="javascript:void(0)" onclick="languageChange(this)" data-locale="in" class="d-block">
+					<div class="d-flex">
+						<div class="db-icon">
+							<i class="id flag"></i>
+						</div>
+						<div>Indonesia</div>
+					</div>
+				</a>
+			</li>
+
+			<!--
+                <li>
+                    <a href="/funder/cash-in-hand" class="d-block">
+                        <div class="d-flex">
+                            <div class="db-icon">
+                                <i class="undo icon"></i>
+                            </div>
+                            <div>Pengembalian Dana</div>
+                        </div>
+                    </a>
+                </li>
+                -->
+
+
+
+
+			<li class="element-mobile">
+				<a href="/funder/rdl-history" class="d-block ">
+					<div class="d-flex">
+						<div class="db-icon">
+							<i class="list icon"></i>
+						</div>
+						<div>Riwayat RDF</div>
+					</div>
+				</a>
+			</li>
+
+			<li class="element-mobile">
+				<a href="/funder/rdl-withdraw" class="d-block ">
+					<div class="d-flex">
+						<div class="db-icon">
+							<i class="list icon"></i>
+						</div>
+						<div>Penarikan RDF</div>
+					</div>
+				</a>
+			</li>
+
+
+
+
+			<li>
+				<a href="/funder/profile" class="d-block">
+					<div class="d-flex">
+						<div class="db-icon">
+							<i class="ti-user"></i>
+						</div>
+						<div>Profil Saya</div>
+					</div>
+				</a>
+			</li>
+
+			<li>
+				<a href="/funder/change-password" class="d-block">
+					<div class="d-flex">
+						<div class="db-icon">
+							<i class="ti-lock"></i>
+						</div>
+						<div>Ganti Kata Sandi</div>
+					</div>
+				</a>
+			</li>
+
+			<li class="element-mobile">
+				<a href="/funder/contact" class="d-block ">
+					<div class="d-flex">
+						<div class="db-icon">
+							<i class="mobile alternate icon"></i>
+						</div>
+						<div>Kontak Kami</div>
+					</div>
+				</a>
+			</li>
+
+			<li class="element-mobile">
+				<a href="/funder/help" class="d-block ">
+					<div class="d-flex">
+						<div class="db-icon">
+							<i class="question circle outline icon"></i>
+						</div>
+						<div>Bantuan</div>
+					</div>
+				</a>
+			</li>
+
+			<li>
+				<a href="javascript:logout()" class="d-block">
+					<div class="d-flex">
+						<div class="db-icon">
+							<i class="sign out alternate icon"></i>
+						</div>
+						<div>Keluar</div>
+					</div>
+				</a>
+			</li>
+
+		</ul>
+	</div>
+	<div class="d-lg-flex flex-column" canvas="container">
+		<div id="triggerElementMobileNavbar" class="mobilenavbar-content-pusher d-lg-none"></div>
+		<div class="top-menu-pusher flex-shrink-0"></div>
+		<div class="d-flex flex-column flex-lg-row flex-shrink-0 custom-hide elemen-profile-container">
+			<div class="profile-container p-3 p-lg-4 dashboard-left">
+				<div class="d-flex">
+					<div>
+						<div class="profile-image full-bg-img rounded-circle"
+							style="background: url('/public-ctl/profile-picture/2c9180827984d5210179896e9c30075b');">
+						</div>
+					</div>
+					<div class="flex-grow-1 pl-2">
+						<span class="d-block text-alfa pt-1"><strong>Mochamad Faishal Amir</strong></span>
+						<span class="d-block" data-toggle="tooltip" data-placement="top" data-original-title='Terverifikasi'></span>
+					</div>
+				</div>
+				<div class="items-profile">
+
+					<div class="detail-status" data-status-id="12">
+
+
+
+
+
+
+
+						<span class="status-text rdl-account-balance">
+                                                    Rp
+                                                </span>
+
+
+
+
+
+					</div>
+					<!-- <div class="saldo"></div> -->
+
+
+					<!-- <span class="d-block">Chief Executive Officer</span> -->
+
+
+
+					<a class="btn btn-special-border text-700 text-uppercase rounded-0 mt-1"
+						href="/funder/rdl-deposit">Isi Saldo RDF</a>
+					<span style="display: inline-block; padding-top: 2px;">
+                                Didukung Oleh <img src="/resources/lenderv2/images/small-1280px-BNI_logo.png" style="height: 13px; position: relative; top: -2px; left: 2px;" />
+                            <span/>
+                        
+                    </div>
+                </div>
+                <div class="profile-status pl-3 pb-3 pr-3 p-lg-0 d-lg-flex flex-grow-1" >
+                    <div class="row no-gutters w-100">
+                        <div class="profile-item d-lg-flex flex-column col-6 pr-1 profile-box">
+                            <div class="flex-grow-1 d-flex flex-column justify-content-center">
+                                <span class="d-block text-uppercase text-center mb-2 mb-lg-0 pb-lg-2">Total Pendanaan (IDR)</span>
+					<div class="text-center div-desktop-report-currency">
+						<h5 class="text-center text-nowrap py-2 py-lg-0 mb-0 lender-invest title-desktop-report-currency invisible"
+							style="display:inline-block">16151485.00</h5>
+					</div>
+					<div class="text-center div-mobile-report-currency">
+						<h5 class="text-center text-nowrap py-2 py-lg-0 mb-0 lender-invest title-mobile-report-currency invisible"
+							style="display:inline-block">16151485.00</h5>
+						<i class="font-18 material-icons tooltip-report-currency" data-toggle="tooltip" data-html="true" data-original-title="16151485.00">info_outline</i>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="profile-item d-lg-flex flex-column col-6 pr-1">
+                            <div class="flex-grow-1 d-flex flex-column justify-content-center">
+                                <span class="d-block text-uppercase text-lg-center mb-2 mb-lg-0 pb-lg-2">Transaksi</span>
+                                <h5 class="text-center text-nowrap py-2 py-lg-0 mb-0">55</h5>
+                            </div>
+                        </div> -->
+			<div class="profile-item d-lg-flex flex-column col-6 profile-box">
+				<div class="flex-grow-1 d-flex flex-column justify-content-center">
+					<span class="d-block text-uppercase text-lg-center mb-2 mb-lg-0 pb-lg-2">Total Imbal hasil/<i>Ujrah</i> (IDR)</span>
+					<div class="text-center div-desktop-report-currency">
+						<h5 class="text-center text-nowrap py-2 py-lg-0 mb-0 accessed-financing lender-earning title-desktop-report-currency invisible"
+							style="display:inline-block">255729.00</h5>
+					</div>
+					<div class="text-center div-mobile-report-currency">
+						<h5 class="text-center text-nowrap py-2 py-lg-0 mb-0 accessed-financing lender-earning title-mobile-report-currency invisible"
+							style="display:inline-block">255729.00</h5>
+						<i class="font-18 material-icons tooltip-report-currency" data-toggle="tooltip" data-html="true" data-original-title="255729.00">info_outline</i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="d-lg-flex flex-grow-1 main-content-container">
+		<div class="d-flex flex-column dashboard-left flex-shrink-0">
+
+
+
+
+
+
+			<style>
+				ul.relami {
+					background: #024861;
+					padding-left: 2em;
+					padding-top: 1em;
+				}
+
+				a.relamititle {
+					font-size: 14px;
+					font-weight: 700;
+				}
+
+				a.relamiinfo {
+					-moz-border-radius: .75em;
+					-webkit-border-radius: .75em;
+					background-color: #F5FBFF;
+					border-radius: .75em;
+					color: #024861;
+					display: inline-block;
+					font-size: 1em;
+					height: 1.5em;
+					line-height: 1em;
+					margin-left: .25em;
+					position: relative;
+					text-indent: -9999em;
+					vertical-align: top;
+					height: 1em;
+					width: 1em;
+					margin-top: .4em;
+				}
+
+				a.relamiinfo:hover {
+					background-color: #FAB03C;
+				}
+
+				a.relamiinfo:before {
+					content: "i";
+					cursor: pointer;
+					display: block;
+					font-family: monospace;
+					font-weight: bold;
+					left: 0;
+					position: absolute;
+					text-align: center;
+					text-indent: 0;
+					width: 1em;
+				}
+
+				.popover-header {
+					background: #F5FBFF;
+					border-bottom: 0px;
+					color: #5B85A2;
+					font-weight: bold;
+					font-size: 1em;
+					padding: .5em .5em .0em .5em;
+				}
+
+				.popover-body {
+					background: #F5FBFF;
+					color: #98B4C7;
+					font-size: 1em;
+					font-weight: normal;
+					padding: .0em .5em .5em .5em;
+				}
+
+				p.relamicode {
+					color: #FFF;
+					font-size: 18px;
+					font-weight: bold;
+					padding-top: .5em;
+					padding-right: 1.2em;
+				}
+
+				.sharebtn {
+					text-decoration: underline;
+					padding-top: .2em;
+					color: #00AA97;
+					font-weight: bold;
+					background: none;
+					border: none;
+					cursor: pointer;
+				}
+
+				/* The snackbar - position it at the bottom and in the middle of the screen */
+				#snackbar {
+					visibility: hidden;
+					/* Hidden by default. Visible on click */
+					min-width: 250px;
+					/* Set a default minimum width */
+					margin-left: -125px;
+					/* Divide value of min-width by 2 */
+					background-color: #333;
+					/* Black background color */
+					color: #fff;
+					/* White text color */
+					text-align: center;
+					/* Centered text */
+					border-radius: 2px;
+					/* Rounded borders */
+					padding: 16px;
+					/* Padding */
+					position: fixed;
+					/* Sit on top of the screen */
+					z-index: 1;
+					/* Add a z-index if needed */
+					left: 50%;
+					/* Center the snackbar */
+					bottom: 30px;
+					/* 30px from the bottom */
+				}
+
+				/* Show the snackbar when clicking on a button (class added with JavaScript) */
+				#snackbar.show {
+					visibility: visible;
+					/* Show the snackbar */
+					/* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+      However, delay the fade out process for 2.5 seconds */
+					-webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+					animation: fadein 0.5s, fadeout 0.5s 2.5s;
+				}
+
+				/* Animations to fade the snackbar in and out */
+				@-webkit-keyframes fadein {
+					from {
+						bottom: 0;
+						opacity: 0;
+					}
+
+					to {
+						bottom: 30px;
+						opacity: 1;
+					}
+				}
+
+				@keyframes fadein {
+					from {
+						bottom: 0;
+						opacity: 0;
+					}
+
+					to {
+						bottom: 30px;
+						opacity: 1;
+					}
+				}
+
+				@-webkit-keyframes fadeout {
+					from {
+						bottom: 30px;
+						opacity: 1;
+					}
+
+					to {
+						bottom: 0;
+						opacity: 0;
+					}
+				}
+
+				@keyframes fadeout {
+					from {
+						bottom: 30px;
+						opacity: 1;
+					}
+
+					to {
+						bottom: 0;
+						opacity: 0;
+					}
+				}
+			</style>
+			<script src="/resources/js/vendor/jquery/jquery-1.11.2.min.js"></script>
+			<script type="text/javascript">
+				$(document).ready(function(){
+        $('.relamiinfo').popover();
+        $(':not(#anything)').on('click', function (e) {
+          $('.relamiinfo').each(function () {
+              //the 'is' for buttons that trigger popups
+              //the 'has' for icons and other elements within a button that triggers a popup
+              if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
+                  $(this).popover('hide');
+                  return;
+              }
+          });
+        });
+    });
+
+    function showSnackbar() {
+      // Get the snackbar DIV
+      var x = document.getElementById("snackbar");
+
+      // Add the "show" class to DIV
+      x.className = "show";
+
+      // After 3 seconds, remove the show class from DIV
+      setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    }
+
+    function copyToClipboard() {
+      var relamicode = document.getElementById("relamicode").getAttribute('title');
+      var copyText = document.getElementById("relamisharetext").getAttribute('title').replace("{{relamicode}}", relamicode);
+      try {
+          navigator.clipboard.writeText(copyText);
+          showSnackbar();
+      } catch(e) {
+          console.log(e);
+      }
+    }
+			</script>
+
+			<ul class="list-unstyled nav-menu m-0 d-none d-lg-block">
+				<li><a class="d-block main-menu-desktop" href="/funder/dashboard">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25.25"
+							height="25.25" viewBox="0 0 25.25 25.25">
+							<defs>
+								<linearGradient id="linear-gradient" x1="3.808" y1="-2.69" x2="3.808" y2="11.511"
+									gradientUnits="objectBoundingBox">
+									<stop offset="0" stop-color="#038095" />
+									<stop offset="1" stop-color="#025a79" />
+								</linearGradient>
+							</defs>
+							<g id="icon-rp" transform="translate(-24.875 -290.875)">
+								<g id="Group_203" data-name="Group 203" transform="translate(-367 253)">
+									<g id="Group_192" data-name="Group 192" transform="translate(398.667 43)">
+										<g id="Group_191" data-name="Group 191" transform="translate(0 0)">
+											<path id="Path_400" data-name="Path 400"
+												d="M186.833,60a.833.833,0,1,0,.833.833A.834.834,0,0,0,186.833,60Z"
+												transform="translate(-186 -60)" stroke="#fff" stroke-width="0.25"
+												fill="url(#linear-gradient)" />
+										</g>
+									</g>
+									<g id="Group_200" data-name="Group 200" transform="translate(392 38)">
+										<g id="Group_199" data-name="Group 199" transform="translate(0)">
+											<path id="Path_404" data-name="Path 404"
+												d="M118.5,0A12.5,12.5,0,1,0,131,12.5,12.514,12.514,0,0,0,118.5,0Zm0,23.333A10.833,10.833,0,1,1,129.333,12.5,10.846,10.846,0,0,1,118.5,23.333Z"
+												transform="translate(-106)" stroke="#fff" stroke-width="0.25"
+												fill="url(#linear-gradient)" />
+										</g>
+									</g>
+									<g id="Group_202" data-name="Group 202" transform="translate(395.333 41.336)">
+										<g id="Group_201" data-name="Group 201" transform="translate(0 0)">
+											<path id="Path_405" data-name="Path 405"
+												d="M160.921,42.059a9.23,9.23,0,0,0-7.785-1.812.833.833,0,1,0,.351,1.629,7.57,7.57,0,0,1,6.387,1.48,7.5,7.5,0,1,1-11.321,2.3.833.833,0,1,0-1.469-.788,9.167,9.167,0,1,0,13.836-2.807Z"
+												transform="translate(-146 -40.031)" stroke="#fff" stroke-width="0.25"
+												fill="url(#linear-gradient)" />
+										</g>
+									</g>
+								</g>
+								<text id="Rp" transform="translate(38 306)" fill="#038095" font-size="7"
+									font-family="OpenSans-Bold, Open Sans" font-weight="700" letter-spacing="-0.005em">
+									<tspan x="-4.508" y="0">Rp</tspan>
+								</text>
+							</g>
+						</svg>
+
+
+						Pendanaan</a></li>
+
+				<!--    <li id="parent-collapseOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="dropdown border-bottom border-bottom-desktop">
+        <div class="d-flex justify-content-between align-items-center dropdown-trigger">
+            <span><i class="industry icon"></i>Pendanaan</span>
+            <i data-feather="chevron-down"></i>
+        </div>
+        <div id="collapseOne" aria-labelledby="headingOne" class="dropdown-content dropdown-content-desktop collapse">
+            <ul class="list-unstyled m-0 d-lg-flex flex-lg-column">
+                 <li><a class="d-block active" href="#">Pesan Slot</a></li> 
+                <li><a class="d-block main-menu-desktop active" href="/funder/dashboard" parentmenu="collapseOne">Danai Sekarang</a></li>
+                <li><a class="d-block main-menu-desktop" href="/funder/pesanslot" parentmenu="collapseOne">Pesan Slot</a></li>
+            </ul>
+        </div>
+    </li>-->
+
+
+				<li id="parent-collapseTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+					aria-controls="collapseTwo" class="dropdown">
+					<div class="d-flex justify-content-between align-items-center dropdown-trigger">
+						<span class='menu-sidebar'>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25.25" height="25.25" viewBox="0 0 25.25 25.25">
+                <defs>
+                  <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                    <stop offset="0" stop-color="#038095"/>
+                    <stop offset="1" stop-color="#025a79"/>
+                  </linearGradient>
+                </defs>
+                <path id="icon-pie" d="M24.271,5.908A9.571,9.571,0,0,0,15.429,0a.976.976,0,0,0-.977.977V6.711h0V8.594a1.955,1.955,0,0,0,1.953,1.953h7.617A.976.976,0,0,0,25,9.57a9.52,9.52,0,0,0-.729-3.662ZM18.257,2.5,16.406,4.354V2.017A7.678,7.678,0,0,1,18.257,2.5ZM16.406,7.116,20.024,3.5a7.438,7.438,0,0,1,1.487,1.489L17.858,8.594H16.406Zm4.232,1.478L22.5,6.753a7.691,7.691,0,0,1,.481,1.841Zm2.409,4.883a11.493,11.493,0,0,1-1.768,6.136.977.977,0,0,1-1.653-1.041,9.521,9.521,0,0,0,1.418-4.118H13.476a2.933,2.933,0,0,1-2.93-2.93V3.956a9.571,9.571,0,1,0,5.938,17.706A.977.977,0,1,1,17.5,23.331,11.524,11.524,0,1,1,11.523,1.953a.976.976,0,0,1,.977.977v8.594a.978.978,0,0,0,.977.977H22.07a.976.976,0,0,1,.977.977Zm0,0" transform="translate(0.163 0.163)" stroke="#fff" stroke-width="0.325" fill="url(#linear-gradient)"/>
+              </svg>
+            Portofolio</span>
+						<i data-feather="chevron-down"></i>
+					</div>
+					<div id="collapseTwo" aria-labelledby="headingOne"
+						class="dropdown-content dropdown-content-desktop collapse">
+						<ul class="list-unstyled m-0 d-lg-flex flex-lg-column">
+							<li><a class="d-block main-menu-desktop" href="/funder/list-investments"
+									parentmenu="collapseTwo">Transaksi Berjalan</a></li>
+							<li><a class="d-block main-menu-desktop" href="/funder/list-past-investments"
+									parentmenu="collapseTwo">Riwayat Transaksi</a></li>
+						</ul>
+					</div>
+				</li>
+				<!-- <li data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree" class="dropdown border-bottom border-bottom-desktop">
+        <div class="d-flex justify-content-between align-items-center dropdown-trigger">
+            <span><i class="newspaper outline icon"></i>Berita</span>
+            <i data-feather="chevron-down"></i>
+        </div>
+        <div id="collapseThree" aria-labelledby="headingOne" class="dropdown-content dropdown-content-desktop collapse">
+            <ul class="list-unstyled m-0 d-lg-flex flex-lg-column">
+                <li><a class="d-block main-menu-desktop" href="#">Your Link</a></li>
+                <li><a class="d-block main-menu-desktop" href="#">Your Link</a></li>
+            </ul>
+        </div>
+    </li> -->
+
+
+				<li id="parent-collapseThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true"
+					aria-controls="collapseThree" class="dropdown">
+					<div class="d-flex justify-content-between align-items-center dropdown-trigger">
+						<span class='menu-sidebar'>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25.5" height="25.529" viewBox="0 0 25.5 25.529">
+                        <defs>
+                          <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                            <stop offset="0" stop-color="#038095"/>
+                            <stop offset="1" stop-color="#025a79"/>
+                          </linearGradient>
+                        </defs>
+                        <g id="icon-safety" transform="translate(0.25 0.265)">
+                          <path id="Path_2715" data-name="Path 2715" d="M20.749,3.12l1.557-1.557L20.833.089,19.058,1.864a12.486,12.486,0,0,0-15.874,2.3H0V20.833H3.184a12.485,12.485,0,0,0,15.874,2.3l1.775,1.776,1.473-1.473L20.749,21.88a12.474,12.474,0,0,0,0-18.76ZM19.27,20.4l-2.6-2.6-1.473,1.473,2.342,2.342a10.4,10.4,0,0,1-11.289-.779h2l2.083-2.083L8.854,17.277,7.381,18.75h-5.3V16.667H4.167V14.583H2.083V10.417H4.167V8.333H2.083V6.25h5.3L8.854,7.724,10.328,6.25,8.244,4.167h-2a10.4,10.4,0,0,1,11.289-.779L15.194,5.729,16.667,7.2l2.6-2.6a10.382,10.382,0,0,1,0,15.8Zm0,0" transform="translate(0 0)" stroke="#fff" stroke-width="0.5" fill="url(#linear-gradient)"/>
+                          <path id="Path_2716" data-name="Path 2716" d="M114.938,108.688h-1.716a3.66,3.66,0,0,0-2.451-2.451V104h-2.083v2.237a3.658,3.658,0,0,0-2.451,2.451H104v2.083h2.237a3.658,3.658,0,0,0,2.451,2.451v2.237h2.083v-2.237a3.66,3.66,0,0,0,2.451-2.451h1.716V113.9h2.083v-8.333h-2.083Zm-5.208,2.6a1.563,1.563,0,1,1,1.563-1.562A1.565,1.565,0,0,1,109.729,111.292Zm0,0" transform="translate(-97.229 -97.229)" stroke="#fff" stroke-width="0.5" fill="url(#linear-gradient)"/>
+                        </g>
+                      </svg>
+                    Informasi RDF</span>
+						<i data-feather="chevron-down"></i>
+					</div>
+					<div id="collapseThree" aria-labelledby="headingTwo"
+						class="dropdown-content dropdown-content-desktop collapse">
+						<ul class="list-unstyled m-0 d-lg-flex flex-lg-column">
+							<li class="border-top"><a class="d-block main-menu-desktop" href="/funder/rdl-history"
+									parentmenu="collapseThree">Riwayat RDF</a></li>
+							<li class="border-top"><a class="d-block main-menu-desktop" href="/funder/rdl-withdraw"
+									parentmenu="collapseThree">Penarikan RDF</a></li>
+						</ul>
+					</div>
+				</li>
+
+
+
+			</ul>
+			<ul class="list-unstyled nav-menu m-0 d-none d-lg-block mt-auto">
+				<li><a class="d-block main-menu-desktop" href="/funder/help">
+						<svg id="icon-information" xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewBox="0 0 25 25">
+							<defs>
+								<linearGradient id="linear-gradient" x1="0.5" y1="-6.512" x2="0.5" y2="2.698"
+									gradientUnits="objectBoundingBox">
+									<stop offset="0" stop-color="#038095" />
+									<stop offset="1" stop-color="#025a79" />
+								</linearGradient>
+							</defs>
+							<g id="Group_217" data-name="Group 217">
+								<g id="Group_216" data-name="Group 216">
+									<circle id="Ellipse_61" data-name="Ellipse 61" cx="1.221" cy="1.221" r="1.221"
+										transform="translate(11.279 17.261)" fill="url(#linear-gradient)" />
+									<path id="Path_415" data-name="Path 415"
+										d="M12.5,0A12.5,12.5,0,1,0,25,12.5,12.493,12.493,0,0,0,12.5,0Zm0,23.047A10.547,10.547,0,1,1,23.047,12.5,10.541,10.541,0,0,1,12.5,23.047Z"
+										fill="url(#linear-gradient)" />
+									<path id="Path_416" data-name="Path 416"
+										d="M12.5,6.274a3.911,3.911,0,0,0-3.906,3.906.977.977,0,0,0,1.953,0A1.953,1.953,0,1,1,12.5,12.134a.977.977,0,0,0-.977.977v2.441a.977.977,0,0,0,1.953,0V13.963A3.907,3.907,0,0,0,12.5,6.274Z"
+										fill="url(#linear-gradient)" />
+								</g>
+							</g>
+						</svg>
+
+						Bantuan</a></li>
+				<li><a class="d-block main-menu-desktop" href="/funder/contact">
+						<svg id="icon-speech-bubble" xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewBox="0 0 25 25">
+							<defs>
+								<linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1"
+									gradientUnits="objectBoundingBox">
+									<stop offset="0" stop-color="#038095" />
+									<stop offset="1" stop-color="#025a79" />
+								</linearGradient>
+							</defs>
+							<path id="Path_417" data-name="Path 417"
+								d="M21.339,3.661A12.5,12.5,0,0,0,1.959,19.22L.049,24.951l5.731-1.91A12.5,12.5,0,0,0,21.339,3.661ZM12.5,23.454a10.893,10.893,0,0,1-6.172-1.9l-.317-.216L2.494,22.506l1.173-3.518-.216-.317a10.954,10.954,0,1,1,9.05,4.782Z"
+								fill="url(#linear-gradient)" />
+							<circle id="Ellipse_62" data-name="Ellipse 62" cx="0.773" cy="0.773" r="0.773"
+								transform="translate(15.851 11.727)" fill="url(#linear-gradient)" />
+							<circle id="Ellipse_63" data-name="Ellipse 63" cx="0.773" cy="0.773" r="0.773"
+								transform="translate(7.603 11.727)" fill="url(#linear-gradient)" />
+							<circle id="Ellipse_64" data-name="Ellipse 64" cx="0.773" cy="0.773" r="0.773"
+								transform="translate(11.727 11.727)" fill="url(#linear-gradient)" />
+						</svg>
+
+						Kontak Kami</a></li>
+			</ul>
+
+		</div>
+		<div class="d-lg-flex flex-lg-grow-1 flex-lg-column" id="right-container-content">
+			<!-- alert section -->
+			<style type="text/css">
+				section>.alert-alm {
+					margin: 10px 0;
+				}
+
+				@media (min-width: 992px) {
+					section>.alert-alm {
+						margin: 0;
+					}
+				}
+			</style>
+			<section class="content">
+
+
+
+
+
+			</section>
+
+
+			<style type="text/css">
+				[canvas=container] {
+					height: calc(100% - 78px);
+				}
+
+				#ismobile {
+					display: block;
+				}
+
+				.countdowncustom {
+					max-width: 200px;
+				}
+
+				#company-container {
+					margin-bottom: 0
+				}
+
+				@media (max-width: 992px) {
+					#company-container {
+						margin-bottom: 55px
+					}
+				}
+
+				@media (min-width: 992px) {
+					.grid-view .company-item .company-pic .company-name {
+						position: absolute;
+						background: none;
+					}
+
+					#applicationmodal .company-img {
+						height: 430px;
+
+					}
+
+					.modal-body {
+						padding: 0;
+					}
+
+					#ismobile {
+						display: none;
+					}
+
+					.grid-view .company-item {
+						padding: 5px;
+					}
+				}
+
+				.bg-danger {
+					background: #FF7F50 !important;
+				}
+			</style>
+			<div class="main-content detail-content">
+
+				<div class="expanded-search d-none">
+					<div class="d-flex flex-column flex-grow-1">
+						<form class="d-flex flex-column flex-grow-1 justify-content-center pl-3">
+							<input id="search_bar" class="py-3" placeholder="Cari.." type="text" name="search_bar">
+                </form>
+					</div>
+					<div class="search-close flex-shrink-0 d-flex align-items-center justify-content-center">
+						<i class="ti-close m-0"></i>
+					</div>
+				</div>
+				<div class="d-flex align-items-center control-board px-3 px-lg-2 bg-delta">
+					<div class="control-btn d-flex align-items-center">
+						<div class="button-view list mr-3 active">
+							<i class="th large list icon"></i>
+						</div>
+						<div class="button-view grid ">
+							<i class="th large icon"></i>
+						</div>
+					</div>
+					<div class="flex-grow-1 text-center">
+						<span class="text-alfa">
+                    <strong>2</strong> Daftar Pembiayaan
+                </span>
+					</div>
+					<div class="control-btn d-flex align-items-center search-primary">
+						<div>
+							<i class="search large icon"></i>
+						</div>
+						<!-- <div class="ml-1">
+                    <i class="exchange large icon"></i>
+                </div> -->
+					</div>
+				</div>
+				<div class="main-content-pusher d-lg-block d-none"></div>
+				<div id="ismobile"></div>
+				<div id="company-list">
+
+
+					<div id="company-container" class="row no-gutters grid-view">
+
+
+
+
+
+
+
+
+						<!-- COMPANY ITEM START -->
+						<div class="company-item company-item-grid row no-gutters"
+							targeturl="/funder/list-borrowers/view/2c9180827c04cb9b017c07b1ff1e0a2e"
+							style="display: none;position: relative;"
+							targetmodal="#applicationmodal-2c9180827c04cb9b017c07b1ff1e0a2e"
+							targetvideo="video-2c9180827c04cb9b017c07b1ff1e0a2e" videosrc="None">
+							<!-- <div class="company-item company-item-grid row no-gutters" style="display: none;position: relative;"> -->
+
+
+
+							<div class="company-pic ratio-box ratio1_1">
+
+
+
+
+
+
+								<div style="background: url('/public-ctl/preview/2c9180827c286a53017c2b12aedb07a8')"
+									class="ratio-box-content full-bg-img">
+									<div class="company-name d-none d-lg-block text-alfa w-100 p-4">
+										<span class="d-block text-uppercase"><strong>IF.PG-7</strong></span>
+										<span class="d-block">
+
+
+
+                                    Perusahaan Dagang dan Distributor
+                                
+                            
+                        </span>
+									</div>
+									<div class="d-flex justify-content-between long-3x5 w-100 p-2 p-lg-4 text-alfa">
+										<div class="d-lg-none small">
+											<i class="industry icon"></i>
+											<strong class="convertmoney">1000000000.00</strong>
+										</div>
+										<div class="d-lg-none small">
+											<i class="chart line icon"></i> <strong>14.44%</strong>
+										</div>
+										<div class="flex-grow-1 d-none d-lg-block">
+											<span class="d-block">Total Pembiayaan</span>
+											<strong class="convertmoney">1000000000.00</strong>
+										</div>
+										<div class="mr-4 d-none d-lg-block">
+											<span class="d-block">Imbal Hasil/<i>Ujrah</i> (Setara)</span>
+											<strong>14.44%</strong>
+										</div>
+										<div class="d-none d-lg-block">
+											<span class="d-block">Jatuh Tempo</span>
+											<strong class="convertDate">2021-12-28</strong>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="company-detail p-4 d-none d-lg-block">
+								<div class="d-flex">
+									<div class="flex-grow-1">
+										<span class="d-block mb-1 text-alfa"><strong>Rating</strong></span>
+										<div class="rating-star">
+											<img src="/resources/lenderv2/images/ratings/rating_3_5.png"  class="icon m-0" alt="Rating"></img>
+										</div>
+									</div>
+									<div class="row no-gutters countdown countdowncustom red flex-shrink-0">
+
+
+
+
+										<div class="col-4 ratio-box ratio1_1 text-center">
+											<div
+												class="ratio-box-content d-flex flex-column justify-content-center m-1">
+												<h5 class="m-0"><strong>13</strong></h5>
+												<span class="d-block">
+                                    Hari
+                                </span>
+											</div>
+										</div>
+										<div class="col-4 ratio-box ratio1_1 text-center">
+											<div
+												class="ratio-box-content d-flex flex-column justify-content-center m-1">
+												<h5 class="m-0"><strong>23</strong></h5>
+												<span class="d-block">
+                                    Jam
+                                </span>
+											</div>
+										</div>
+										<div class="col-4 ratio-box ratio1_1 text-center">
+											<div
+												class="ratio-box-content d-flex flex-column justify-content-center m-1">
+												<h5 class="m-0"><strong>43</strong></h5>
+												<span class="d-block">
+                                    Menit
+                                </span>
+											</div>
+										</div>
+
+
+									</div>
+								</div>
+								<div class="mt-3">
+									<div class="progress">
+										<div class="progress-bar bg-primary" role="progressbar" style="width: 40%"
+											aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</div>
+								<div class="d-flex text-alfa detail-data mt-3">
+									<div class="flex-shrink-1">
+
+
+
+										<span><strong> Terdanai :</span></strong>
+
+
+										<span>40.98%</span>
+									</div>
+									<div class="flex-grow-1 text-right">
+										<span><strong>Sisa Slot :</strong></span>
+										<span class="convertmoney">590183134.00</span>
+									</div>
+								</div>
+								<!-- <div class="row mt-3 text-alfa detail-data">
+                    <div class="col-6">
+                        <span><strong>Terdanai :</strong></span>
+                        <span>60%</span>
+                    </div>              
+                    <div class="col-6 text-right pl-4">
+                        <span><strong>Sisa Slot :</strong></span>
+                        <span>Rp 500.000.000</span>
+                    </div>                       
+                </div> -->
+							</div>
+						</div>
+						<!-- COMPANY ITEM END -->
+						<div class="modal modal-lg fade" id="applicationmodal-2c9180827c04cb9b017c07b1ff1e0a2e"
+							tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"
+							style="margin:0 auto">
+							<div class="modal-dialog modal-lg" role="document">
+								<div class="modal-content">
+
+									<div class="modal-body">
+										<button type="button" class="close" data-dismiss="modal" style="z-index:999;position: absolute;right: 0;top: -10px;font-size: 50px;">&times;</button>
+										<div class="row">
+											<div class="col-lg-7">
+												<div class="company-img owl-carousel owl-theme">
+													<!-- <div>
+                                <video id="video-2c9180827c04cb9b017c07b1ff1e0a2e">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div> -->
+
+													<div style="background: url('/public-ctl/preview/2c9180827c286a53017c2b12aedb07a8')"
+														class="full-bg-img"></div>
+													<!-- <div style="background: url('/public-ctl/preview/2c9180827c286a53017c2b12aedb07a8')" class="full-bg-img"></div> -->
+												</div>
+
+											</div>
+											<div class="col-lg-5 pr-4">
+												<div class="py-3 py-3">
+													<h6 class="text-alfa text-600">IF.PG-7</h6>
+													<span class="d-inline-block py-2 px-3 text-delta bg-danger mr-2">
+
+
+
+                                    Perusahaan Dagang dan Distributor
+                                
+                            
+                        </span>
+													<img src="/resources/lenderv2/images/ratings/rating_3_5.png"  class="m-0" alt="Rating"></img>
+												</div>
+												<div>PG berdiri 2015 sebagai perusahaan yang bergerak dalam bidang
+													pengadaan bahan baku dan bahan pendukung Produksi industri pupuk.
+												</div>
+												<div class="row small text-alfa bottom-info pt-3"
+													style="padding-bottom: 4rem">
+													<div class="col-4">
+
+
+
+														<strong>Terdanai :</strong>
+
+
+														<br/>40.98 %
+                            </div>
+														<div class="col-4 border-left border-right">
+															<strong>Tersedia (Rp):</strong><br/>
+															<span class="convertmoneylong">590183134.00</span>
+														</div>
+														<div class="col-4">
+															<strong>Jatuh Tempo :</strong><br/>
+															<span class="convertDate">2021-12-28</span>
+														</div>
+													</div>
+													<a class="btn btn-primary-border text-700 text-uppercase rounded-0 mt-3"
+														href="/funder/list-borrowers/view/2c9180827c04cb9b017c07b1ff1e0a2e"
+														style="width: 84%;position: absolute;bottom: 20px;">Selengkapnya</a>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<!-- COMPANY ITEM START -->
+							<div class="company-item company-item-grid row no-gutters"
+								targeturl="/funder/list-borrowers/view/2c9180827bffa543017c024a55c90670"
+								style="display: none;position: relative;"
+								targetmodal="#applicationmodal-2c9180827bffa543017c024a55c90670"
+								targetvideo="video-2c9180827bffa543017c024a55c90670" videosrc="None">
+								<!-- <div class="company-item company-item-grid row no-gutters" style="display: none;position: relative;"> -->
+
+
+
+								<div class="company-pic ratio-box ratio1_1">
+
+
+
+
+
+
+									<div style="background: url('/public-ctl/preview/2c9180827c2343ff017c26c5c7f86571')"
+										class="ratio-box-content full-bg-img">
+										<div class="company-name d-none d-lg-block text-alfa w-100 p-4">
+											<span class="d-block text-uppercase"><strong>IF.MDU-4</strong></span>
+											<span class="d-block">
+
+
+
+                                    Konstruksi dan Teknik
+                                
+                            
+                        </span>
+										</div>
+										<div class="d-flex justify-content-between long-3x5 w-100 p-2 p-lg-4 text-alfa">
+											<div class="d-lg-none small">
+												<i class="industry icon"></i>
+												<strong class="convertmoney">1650000000.00</strong>
+											</div>
+											<div class="d-lg-none small">
+												<i class="chart line icon"></i> <strong>15.50%</strong>
+											</div>
+											<div class="flex-grow-1 d-none d-lg-block">
+												<span class="d-block">Total Pembiayaan</span>
+												<strong class="convertmoney">1650000000.00</strong>
+											</div>
+											<div class="mr-4 d-none d-lg-block">
+												<span class="d-block">Imbal Hasil/<i>Ujrah</i> (Setara)</span>
+												<strong>15.50%</strong>
+											</div>
+											<div class="d-none d-lg-block">
+												<span class="d-block">Jatuh Tempo</span>
+												<strong class="convertDate">2022-01-19</strong>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="company-detail p-4 d-none d-lg-block">
+									<div class="d-flex">
+										<div class="flex-grow-1">
+											<span class="d-block mb-1 text-alfa"><strong>Rating</strong></span>
+											<div class="rating-star">
+												<img src="/resources/lenderv2/images/ratings/rating_3.png"  class="icon m-0" alt="Rating"></img>
+											</div>
+										</div>
+										<div class="row no-gutters countdown countdowncustom red flex-shrink-0">
+
+
+
+
+											<div class="col-4 ratio-box ratio1_1 text-center">
+												<div
+													class="ratio-box-content d-flex flex-column justify-content-center m-1">
+													<h5 class="m-0"><strong>13</strong></h5>
+													<span class="d-block">
+                                    Hari
+                                </span>
+												</div>
+											</div>
+											<div class="col-4 ratio-box ratio1_1 text-center">
+												<div
+													class="ratio-box-content d-flex flex-column justify-content-center m-1">
+													<h5 class="m-0"><strong>22</strong></h5>
+													<span class="d-block">
+                                    Jam
+                                </span>
+												</div>
+											</div>
+											<div class="col-4 ratio-box ratio1_1 text-center">
+												<div
+													class="ratio-box-content d-flex flex-column justify-content-center m-1">
+													<h5 class="m-0"><strong>13</strong></h5>
+													<span class="d-block">
+                                    Menit
+                                </span>
+												</div>
+											</div>
+
+
+										</div>
+									</div>
+									<div class="mt-3">
+										<div class="progress">
+											<div class="progress-bar bg-primary" role="progressbar" style="width: 100%"
+												aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</div>
+									<div class="d-flex text-alfa detail-data mt-3">
+										<div class="flex-shrink-1">
+
+
+
+											<span><strong> Terdanai :</span></strong>
+
+
+											<span>100.00%</span>
+										</div>
+										<div class="flex-grow-1 text-right">
+											<span><strong>Sisa Slot :</strong></span>
+											<span class="convertmoney">0.00</span>
+										</div>
+									</div>
+									<!-- <div class="row mt-3 text-alfa detail-data">
+                    <div class="col-6">
+                        <span><strong>Terdanai :</strong></span>
+                        <span>60%</span>
+                    </div>              
+                    <div class="col-6 text-right pl-4">
+                        <span><strong>Sisa Slot :</strong></span>
+                        <span>Rp 500.000.000</span>
+                    </div>                       
+                </div> -->
+								</div>
+							</div>
+							<!-- COMPANY ITEM END -->
+							<div class="modal modal-lg fade" id="applicationmodal-2c9180827bffa543017c024a55c90670"
+								tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"
+								style="margin:0 auto">
+								<div class="modal-dialog modal-lg" role="document">
+									<div class="modal-content">
+
+										<div class="modal-body">
+											<button type="button" class="close" data-dismiss="modal" style="z-index:999;position: absolute;right: 0;top: -10px;font-size: 50px;">&times;</button>
+											<div class="row">
+												<div class="col-lg-7">
+													<div class="company-img owl-carousel owl-theme">
+														<!-- <div>
+                                <video id="video-2c9180827bffa543017c024a55c90670">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div> -->
+
+														<div style="background: url('/public-ctl/preview/2c9180827c2343ff017c26c5c7f86571')"
+															class="full-bg-img"></div>
+														<!-- <div style="background: url('/public-ctl/preview/2c9180827c2343ff017c26c5c7f86571')" class="full-bg-img"></div> -->
+													</div>
+
+												</div>
+												<div class="col-lg-5 pr-4">
+													<div class="py-3 py-3">
+														<h6 class="text-alfa text-600">IF.MDU-4</h6>
+														<span class="d-inline-block py-2 px-3 text-delta bg-danger mr-2">
+
+
+
+                                    Konstruksi dan Teknik
+                                
+                            
+                        </span>
+														<img src="/resources/lenderv2/images/ratings/rating_3.png"  class="m-0" alt="Rating"></img>
+													</div>
+													<div>MDU berdiri semenjak tahun 2012. Sebagai Perusahaan kontraktor
+														kami ingin dapat berpartisipasi dalam pelaksanaan proyek
+														pembangunan di Indonesia khususnya di bidang VISI Konstruksi
+														baja, Sipil dan Mechanical Electrical. Dengan di dukung oleh SDM
+														yang handal dan pengalaman dalam mengerjakan proyek serta
+														mengutamakan mutu yang baik.</div>
+													<div class="row small text-alfa bottom-info pt-3"
+														style="padding-bottom: 4rem">
+														<div class="col-4">
+
+
+
+															<strong>Terdanai :</strong>
+
+
+															<br/>100.00 %
+                            </div>
+															<div class="col-4 border-left border-right">
+																<strong>Tersedia (Rp):</strong><br/>
+																<span class="convertmoneylong">0.00</span>
+															</div>
+															<div class="col-4">
+																<strong>Jatuh Tempo :</strong><br/>
+																<span class="convertDate">2022-01-19</span>
+															</div>
+														</div>
+														<a class="btn btn-primary-border text-700 text-uppercase rounded-0 mt-3"
+															href="/funder/list-borrowers/view/2c9180827bffa543017c024a55c90670"
+															style="width: 84%;position: absolute;bottom: 20px;">Selengkapnya</a>
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+
+
+
+
+
+
+
+
+
+								<!-- COMPANY ITEM START -->
+								<div class="company-item company-item-list w-100 row no-gutters"
+									targeturl="/funder/list-borrowers/view/2c9180827c04cb9b017c07b1ff1e0a2e"
+									style="display: none;position: relative;"
+									targetmodal="#applicationmodal-2c9180827c04cb9b017c07b1ff1e0a2e"
+									targetvideo="video-2c9180827c04cb9b017c07b1ff1e0a2e" videosrc="None">
+									<!-- <div class="company-item company-item-list w-100 row no-gutters" style="display: none;position: relative;"> -->
+									<div class="company-pic ratio-box ratio1_1">
+
+
+
+
+
+
+
+										<div style="background: url('/public-ctl/preview/2c9180827c286a53017c2b12aedb07a8')"
+											class="ratio-box-content full-bg-img">
+										</div>
+									</div>
+									<div class="company-detail w-100 d-lg-none">
+										<div class="row no-gutters company-name p-3 small text-alfa">
+											<div class="col-7">
+												<span class="d-block text-uppercase"><strong>IF.PG-7</strong></span>
+												<span class="d-block">
+
+
+
+                                            Perusahaan Dagang dan Distributor
+                                        
+                                    
+                            </span>
+											</div>
+											<div class="col-5 text-right">
+												<span class="d-block"><strong class="convertmoneylong">1000000000.00</strong></span>
+												<span class="d-block">
+                            <strong>Imbal Hasil :</strong> 14.44%
+                        </span>
+											</div>
+										</div>
+										<div class="d-flex px-3">
+											<div class="flex-shrink-0">
+												<img src="/resources/lenderv2/images/ratings/rating_3_5.png"  class="icon m-0" alt="Rating"></img>
+											</div>
+											<div class="flex-grow-1 pl-4">
+												<div class="progress">
+													<div class="progress-bar bg-primary" role="progressbar"
+														style="width: 40%" aria-valuenow="40" aria-valuemin="0"
+														aria-valuemax="100"></div>
+												</div>
+											</div>
+										</div>
+										<div class="row p-3 small text-alfa bottom-info">
+											<div class="col-4">
+
+
+
+												Terdanai :
+
+
+												<strong> 40.98%</strong>
+											</div>
+											<div class="col-4 border-left border-right">
+												<strong>Slot :</strong>
+												<span class="convertmoneylong">590183134.00</span>
+											</div>
+											<div class="col-4">
+												<strong>Jatuh Tempo :</strong>
+												<span class="convertDate">2021-12-28</span>
+											</div>
+										</div>
+									</div>
+									<div class="company-detail d-none d-lg-block">
+										<div class="d-flex">
+											<div class="company-name text-alfa flex-grow-1">
+												<div class="row">
+													<div class="col-sm-6">
+														<span class="d-block text-uppercase"><strong>IF.PG-7</strong></span>
+														<span class="d-block">
+
+
+
+                                            Perusahaan Dagang dan Distributor
+                                        
+                                    
+                                    </span>
+													</div>
+													<div class="col-sm-6 text-right">
+
+
+
+
+														<a class="btn btn-special-primary text-700 mt-1 actionbook"
+															href="/funder/list-borrowers/view/2c9180827c04cb9b017c07b1ff1e0a2e"
+															style="margin: 5px;">Danai Sekarang</a>
+
+
+													</div>
+												</div>
+
+												<div class="row mt-4 text-alfa detail-data justify-content-between">
+													<div class="col-2">
+														<span class="d-block mb-1">Total Pembiayaan (Rp)</span>
+														<strong class="convertmoneylong">1000000000.00</strong>
+													</div>
+													<div class="col-2 pl-2 pr-2">
+														<span class="d-block mb-1">Imbal Hasil/<i>Ujrah</i> (Setara)</span>
+														<strong>14.44%</strong>
+													</div>
+													<div class="col-2 pl-2 pr-2">
+														<span class="d-block mb-1">Jatuh Tempo</span>
+														<strong class="convertDate">2021-12-28</strong>
+													</div>
+													<div class="col-2 pl-2 pr-2">
+														<span class="d-block mb-1">Rating</span>
+														<div>
+															<img src="/resources/lenderv2/images/ratings/rating_3_5.png"  class="icon m-0" alt="Rating"></img>
+														</div>
+													</div>
+													<div class="col-3 pl-2 pr-2">
+														<div class="row no-gutters countdowncustom red flex-shrink-0">
+
+
+
+
+															<div class="pr-4">
+																<span class="d-block mb-1">Pembiayaan Akan Berakhir</span>
+															</div>
+															<div class="items d-flex w-100 pr-4">
+																<div class="item d-flex mr-2 align-items-center">
+																	<h5 class="m-0 mr-1"><strong>13</strong></h5>
+																	<span class="d-block">
+                                                            Hari
+                                                        </span>
+																</div>
+																<div class="item d-flex mr-2 align-items-center">
+																	<h5 class="m-0 mr-1"><strong>23</strong></h5>
+																	<span class="d-block">
+                                                            Jam
+                                                        </span>
+																	</span>
+																</div>
+																<div class="item d-flex align-items-center">
+																	<h5 class="m-0 mr-1"><strong>43</strong></h5>
+																	<span class="d-block">
+                                                            Menit
+                                                        </span>
+																</div>
+															</div>
+
+
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<div class="d-flex" style="padding-top: 5px;margin-top: 5px;">
+											<div class="flex-grow-1"
+												style="justify-content: flex-end;flex-direction: column;display: flex;padding: 5px;">
+
+												<div class="progress mb-3">
+													<div class="progress-bar bg-primary" role="progressbar"
+														style="width: 40%" aria-valuenow="40" aria-valuemin="0"
+														aria-valuemax="100"></div>
+												</div>
+
+
+
+												<div class="row">
+													<div class="pl-2 pr-2">
+														<span class="d-block">Terdanai :<strong> 40.98%</strong></span>
+													</div>
+													<div class="line">|</div>
+													<div class="pl-2 pr-2">
+														<span class="d-block mb-1">Slot (Rp) <strong class="convertmoneylong">590183134.00</strong></span>
+													</div>
+												</div>
+
+
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- COMPANY ITEM END -->
+
+								<!-- COMPANY ITEM START -->
+								<div class="company-item company-item-list w-100 row no-gutters"
+									targeturl="/funder/list-borrowers/view/2c9180827bffa543017c024a55c90670"
+									style="display: none;position: relative;"
+									targetmodal="#applicationmodal-2c9180827bffa543017c024a55c90670"
+									targetvideo="video-2c9180827bffa543017c024a55c90670" videosrc="None">
+									<!-- <div class="company-item company-item-list w-100 row no-gutters" style="display: none;position: relative;"> -->
+									<div class="company-pic ratio-box ratio1_1">
+
+
+
+
+
+
+
+										<div style="background: url('/public-ctl/preview/2c9180827c2343ff017c26c5c7f86571')"
+											class="ratio-box-content full-bg-img">
+										</div>
+									</div>
+									<div class="company-detail w-100 d-lg-none">
+										<div class="row no-gutters company-name p-3 small text-alfa">
+											<div class="col-7">
+												<span class="d-block text-uppercase"><strong>IF.MDU-4</strong></span>
+												<span class="d-block">
+
+
+
+                                            Konstruksi dan Teknik
+                                        
+                                    
+                            </span>
+											</div>
+											<div class="col-5 text-right">
+												<span class="d-block"><strong class="convertmoneylong">1650000000.00</strong></span>
+												<span class="d-block">
+                            <strong>Imbal Hasil :</strong> 15.50%
+                        </span>
+											</div>
+										</div>
+										<div class="d-flex px-3">
+											<div class="flex-shrink-0">
+												<img src="/resources/lenderv2/images/ratings/rating_3.png"  class="icon m-0" alt="Rating"></img>
+											</div>
+											<div class="flex-grow-1 pl-4">
+												<div class="progress">
+													<div class="progress-bar bg-primary" role="progressbar"
+														style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+														aria-valuemax="100"></div>
+												</div>
+											</div>
+										</div>
+										<div class="row p-3 small text-alfa bottom-info">
+											<div class="col-4">
+
+
+
+												Terdanai :
+
+
+												<strong> 100.00%</strong>
+											</div>
+											<div class="col-4 border-left border-right">
+												<strong>Slot :</strong> <span class="convertmoneylong">0.00</span>
+											</div>
+											<div class="col-4">
+												<strong>Jatuh Tempo :</strong>
+												<span class="convertDate">2022-01-19</span>
+											</div>
+										</div>
+									</div>
+									<div class="company-detail d-none d-lg-block">
+										<div class="d-flex">
+											<div class="company-name text-alfa flex-grow-1">
+												<div class="row">
+													<div class="col-sm-6">
+														<span class="d-block text-uppercase"><strong>IF.MDU-4</strong></span>
+														<span class="d-block">
+
+
+
+                                            Konstruksi dan Teknik
+                                        
+                                    
+                                    </span>
+													</div>
+													<div class="col-sm-6 text-right">
+
+
+
+
+														<a class="btn btn-special-primary text-700 mt-1 actionbook"
+															href="/funder/list-borrowers/view/2c9180827bffa543017c024a55c90670"
+															style="margin: 5px;">Danai Sekarang</a>
+
+
+													</div>
+												</div>
+
+												<div class="row mt-4 text-alfa detail-data justify-content-between">
+													<div class="col-2">
+														<span class="d-block mb-1">Total Pembiayaan (Rp)</span>
+														<strong class="convertmoneylong">1650000000.00</strong>
+													</div>
+													<div class="col-2 pl-2 pr-2">
+														<span class="d-block mb-1">Imbal Hasil/<i>Ujrah</i> (Setara)</span>
+														<strong>15.50%</strong>
+													</div>
+													<div class="col-2 pl-2 pr-2">
+														<span class="d-block mb-1">Jatuh Tempo</span>
+														<strong class="convertDate">2022-01-19</strong>
+													</div>
+													<div class="col-2 pl-2 pr-2">
+														<span class="d-block mb-1">Rating</span>
+														<div>
+															<img src="/resources/lenderv2/images/ratings/rating_3.png"  class="icon m-0" alt="Rating"></img>
+														</div>
+													</div>
+													<div class="col-3 pl-2 pr-2">
+														<div class="row no-gutters countdowncustom red flex-shrink-0">
+
+
+
+
+															<div class="pr-4">
+																<span class="d-block mb-1">Pembiayaan Akan Berakhir</span>
+															</div>
+															<div class="items d-flex w-100 pr-4">
+																<div class="item d-flex mr-2 align-items-center">
+																	<h5 class="m-0 mr-1"><strong>13</strong></h5>
+																	<span class="d-block">
+                                                            Hari
+                                                        </span>
+																</div>
+																<div class="item d-flex mr-2 align-items-center">
+																	<h5 class="m-0 mr-1"><strong>22</strong></h5>
+																	<span class="d-block">
+                                                            Jam
+                                                        </span>
+																	</span>
+																</div>
+																<div class="item d-flex align-items-center">
+																	<h5 class="m-0 mr-1"><strong>13</strong></h5>
+																	<span class="d-block">
+                                                            Menit
+                                                        </span>
+																</div>
+															</div>
+
+
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<div class="d-flex" style="padding-top: 5px;margin-top: 5px;">
+											<div class="flex-grow-1"
+												style="justify-content: flex-end;flex-direction: column;display: flex;padding: 5px;">
+
+												<div class="progress mb-3">
+													<div class="progress-bar bg-primary" role="progressbar"
+														style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+														aria-valuemax="100"></div>
+												</div>
+
+
+
+												<div class="row">
+													<div class="pl-2 pr-2">
+														<span class="d-block">Terdanai :<strong> 100.00%</strong></span>
+													</div>
+													<div class="line">|</div>
+													<div class="pl-2 pr-2">
+														<span class="d-block mb-1">Slot (Rp) <strong class="convertmoneylong">0.00</strong></span>
+													</div>
+												</div>
+
+
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- COMPANY ITEM END -->
+
+
+							</div>
+
+
+
+						</div>
+
+					</div>
+					<style type="text/css">
+					</style>
+				</div>
+			</div>
+		</div>
+
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" crossorigin="anonymous">
+		</script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" crossorigin="anonymous">
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/slidebars/2.0.2/slidebars.min.js" type="text/javascript">
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" type="text/javascript">
+		</script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"
+			type="text/javascript"></script>
+		<script src="/resources/lender/vendor/bootstrap-notify.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"
+			type="text/javascript"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+		<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+		<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+		<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+		<script src="/resources/beneficiary/vendor/datatable-responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+		<script src="/resources/beneficiary/vendor/datatable-responsive/2.2.3/js/responsive.bootstrap4.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+
+		<script src="/resources/js/vendor/daterangepicker/moment-with-locales.min.js"></script>
+		<script src="/resources/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js">
+		</script>
+
+
+		<script src="/resources/plugins/jquery-validation/jquery.validate.js"></script>
+		<script src="/resources/plugins/jquery-steps/jquery.steps.min.js"></script>
+		<script src="/resources/plugins/jquery-inputmask/jquery.inputmask.bundle.js"></script>
+		<script type="text/javascript" src="/resources/lenderv2/js/script.min.js"></script>
+
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-masker/1.2.0/vanilla-masker.min.js"></script>
+		<script src="/resources/plugins/autoNumeric/autoNumeric.min.js"></script>
+
+
+
+		<!-- <script src="/resources/js/vendor/datatables-new/RowGroup-1.0.3/js/dataTables.rowGroup.js"></script> -->
+
+		<script src="/resources/plugins/chartjs/Chart.bundle.min.js"></script>
+		<script src="/resources/plugins/sweetalert/sweetalert.min.js"></script>
+		<script src="/resources/plugins/pdfjs/pdf.js"></script>
+		<script src="/resources/plugins/pdfjs/pdf.worker.js"></script>
+
+		<script src="/resources/js/vendor/identicon/pnglib.js"></script>
+		<script src="/resources/js/vendor/identicon/identicon.js"></script>
+
+		<script src="/resources/lender/js/api-lender.js?1632817060118"></script>
+
+		<script>
+			function convertToLongCurency(input){
+                    var suffix = '';
+                    var before = parseInt(input);
+                    
+                     var formatMoney = {
+                      // Decimal precision -> "90"
+                      precision: 0,
+                      // Decimal separator -> ",90"
+                      separator: ',',
+                      // Number delimiter -> "12.345.678"
+                      delimiter: '.',
+                      // Money unit -> "R$ 12.345.678,90"
+                      // unit: 'IDR',
+                      // Money unit -> "12.345.678,90 R$"
+                      suffixUnit: suffix,
+                      // Force type only number instead decimal,
+                      // masking decimals with ",00"
+                      // Zero cents -> "R$ 1.234.567.890,00"
+                      zeroCents: true
+                    }
+                    return VMasker.toMoney(before,formatMoney);
+                }
+                 function convertDate(input){
+                    
+                    var DateCreated = moment(input,'YYYY-MM-DD').lang("in" == 'in' ? 'id' : 'en').format('MMMM Do YYYY');
+                    return DateCreated;
+                 }
+                 
+                 function getNumericOptions () {
+                    var symbolIsPrefix = true;
+                    var symbol = 'Rp';
+                    var options = {
+                        modifyValueOnWheel      : false,
+                        digitGroupSeparator		: '.',
+                        decimalCharacter		: ',',
+                        maximumValue            : Number.MAX_SAFE_INTEGER,
+                        currencySymbol			: symbolIsPrefix ? symbol + ' ' : ' ' + symbol,
+                        currencySymbolPlacement	: symbolIsPrefix ? AutoNumeric.options.currencySymbolPlacement.prefix : AutoNumeric.options.currencySymbolPlacement.suffix, 
+                    };
+
+                    return options;
+                }
+                
+                 function convertToShortCurency(input){
+                    var suffix = '';
+                    var before = parseInt(input);
+                    if(before>=1000000000 ){
+                        before = parseInt(before/1000000000);
+                        if($.currentLocale == 'en'){
+                            suffix = 'B'
+                        }else{
+                            suffix = 'M'
+                        }
+                    }else if(before>=1000000 ){
+                        before = parseInt(before/1000000);
+                        if($.currentLocale == 'en'){
+                            suffix = 'M'
+                        }else{
+                            suffix = 'Jt'
+                        }
+                    }
+                     var formatMoney = {
+                      // Decimal precision -> "90"
+                      precision: 0,
+                      // Decimal separator -> ",90"
+                      separator: ',',
+                      // Number delimiter -> "12.345.678"
+                      delimiter: '.',
+                      // Money unit -> "R$ 12.345.678,90"
+                      // unit: 'IDR',
+                      // Money unit -> "12.345.678,90 R$"
+                      suffixUnit: suffix,
+                      // Force type only number instead decimal,
+                      // masking decimals with ",00"
+                      // Zero cents -> "R$ 1.234.567.890,00"
+                      zeroCents: true
+                    }
+                    return VMasker.toMoney(before,formatMoney);
+                }
+                $(document).ready(function () {
+        
+
+                $( ".convertmoney" ).each(function( index ) {
+                    var before = $( this ).text();
+                    $(this).html(convertToShortCurency(before));
+                  console.log( index + ": " + $( this ).text() );
+                });
+                $( ".convertDate" ).each(function( index ) {
+                    var before = $( this ).text();
+                    $(this).html(convertDate(before));
+                  console.log( index + ": " + $( this ).text() );
+                });
+                $( ".convertmoneylong" ).each(function( index ) {
+                    var before = $( this ).text();
+                    $(this).html(convertToLongCurency(before));
+                  console.log( index + ": " + $( this ).text() );
+                });
+                $( ".convertmoneylongwithrp" ).each(function( index ) {
+                    var before = $( this ).text();
+                    $(this).html("Rp "+ convertToLongCurency(before));
+                  console.log( index + ": " + $( this ).text() );
+                });
+                $( ".convertdatefromutctodatetime" ).each(function( index ) {
+                    var before = $( this ).text();
+                    $(this).html(moment($( this ).text()).format('DD MMMM YYYY (HH:mm)'));
+                      console.log( index + ": " + $( this ).text() );
+                });
+                
+                
+                
+                    $(function () {
+                      $('[data-toggle="tooltip"]').tooltip();
+                      
+                      loadRdlBalance();
+                    });
+                    
+                    $.ajaxSetup({
+                        statusCode:
+                            {
+                                901: ajaxSessionExpired
+                            }
+                    });
+                    // START store global variable in jquery scope
+                    $.profileUrl = "/funder";
+                    $.currentLocale = "in";
+                    $.sessionScope = {};
+
+                    $.currency_lender = {
+                        symbolIsPrefix: true,
+                        symbol: $.currentLocale == "in" ? 'Rp' : 'IDR'
+                    };
+                    $.options_lender = {
+                        modifyValueOnWheel: false,
+                        digitGroupSeparator: '.',
+                        decimalCharacter: ',',
+                        decimalPlaces: 2,
+                        currencySymbol: $.currency_lender.symbolIsPrefix ? $.currency_lender.symbol + ' ' : ' ' + $.currency_lender.symbol,
+                        currencySymbolPlacement: $.currency_lender.symbolIsPrefix ? AutoNumeric.options.currencySymbolPlacement.prefix : AutoNumeric.options.currencySymbolPlacement.suffix,
+                    };
+                    // END store global variable in jquery scope
+
+                    
+                    $('[data-locale]').each(function () {
+                        var dataLocale = $(this).attr("data-locale");
+                        if (dataLocale == "in") {
+                            $(this).addClass("active");
+                        }
+                    });
+
+                    $.fn.steps.defaults.labels.previous = '<span class="label step-custom-previous">' + 'Kembali' + '</span>';
+                    $.fn.steps.defaults.labels.next = '<span class="label step-custom-next">' + 'Lanjutkan Tahap 2' + '</span>';
+                    $.fn.steps.defaults.labels.finish = '<span class="label">' + 'Daftar' + '</span>';
+
+                    // animated
+                    $('div.card-white.animated').addClass('slideInUp');
+                    $('div.backToTop').addClass('slideInRight');
+
+                    // active main menu
+                    $('.parentmenu').removeClass('active').removeClass('show');
+                    $('.main-menu').each(function (index, value) {
+                        var parentmenu = $(this).attr('parentmenu');
+                        var currentState = location.href;
+                        console.log(currentState);
+                        console.log(value.href);
+                        if (currentState.indexOf(value.href) >= 0 ) {
+                            $(value).addClass('active');
+                            $('#'+parentmenu+"-tab").addClass('active').addClass('show');
+                            $('#'+parentmenu).addClass('active').addClass('show');
+                        } else {
+                            $(value).removeClass('active');
+                        }
+                    });
+                    $('.dropdown-content-desktop').removeClass('show');
+                    $('.border-bottom-desktop').attr('aria-expanded',false).addClass('collapsed');
+                    $('.main-menu-desktop').each(function (index, value) {
+                        var currentState = location.href;
+                        var parentmenu = $(this).attr('parentmenu');
+                        console.log(parentmenu);
+                        console.log(currentState);
+                        console.log(value.href);
+                        if (currentState.indexOf(value.href) >= 0 ) {
+                            $('#'+parentmenu).addClass('show');
+                            $('#parent-'+parentmenu).attr('aria-expanded',true).removeClass('collapsed');
+                            $(value).addClass('active');
+                            // $('#'+parentmenu).addClass('active').addClass('show');
+                        } else {
+                            $(value).removeClass('active');
+                        }
+                    });
+                    
+                    // active user menu
+                    $('.user-menu').each(function (index, value) {
+                        var currentState = location.href;
+                        if (currentState.indexOf(value.href) >= 0 ) {
+                            $(value).addClass('active');
+                        } else {
+                            $(value).removeClass('active');
+                        }
+                    });
+                    var text =  $('.status-text');
+                    if(text[0].innerHTML === 'Terverifikasi' || text[0].innerHTML === 'Verified'){
+                        $(".info-verifikasi").addClass('verified-icon');
+                        $(".info-verifikasi").append('<i class="fas fa-check"></i>');
+                        text.addClass('verified');
+                    } else {
+                        $(".info-verifikasi").addClass('unverified-icon');
+                        $(".info-verifikasi").append('<i class="fas fa-exclamation"></i>');
+                        text.removeClass('verified');
+                    }
+                    
+                    
+                    
+                    $('h5.title-mobile-report-currency').each(function(index, element) {
+                        var data = $(element).text();
+                        $(element).text('Rp ' + convertToShortCurency(data));
+                        $(element).removeClass('invisible');
+                    });
+
+                    $('h5.title-desktop-report-currency').each(function(index, element) {
+                        var options = getNumericOptions();
+                        var data = $(element).text();
+                        $(element).text(AutoNumeric.format(data, options));
+                        $(element).removeClass('invisible');
+                    });
+
+                    $('i.tooltip-report-currency').each(function(index, element) {
+                        var options = getNumericOptions();
+                        var data = $(element).attr('data-original-title');
+                        $(element).attr('data-original-title',AutoNumeric.format(data, options));
+                        $(element).removeClass('invisible');
+                    });
+                    
+                });
+                
+                function toggleSidenav() {
+                    if ($('.sidenav').hasClass('open')) {
+                        $('.sidenav').removeClass('open');
+                    } else {
+                        $('.sidenav').addClass('open');
+                    }
+                }
+
+                function languageChange(obj) {
+                    var dataLocale = $(obj).attr("data-locale");
+                    if (dataLocale == "in") {
+                        $(obj).addClass("active");
+                    }
+                    var str = "locale=" + dataLocale;
+                    $.ajax({
+                        method: "POST",
+                        url: $.profileUrl + "/persons/change-locale/" + str,
+                    }).done(function (result) {
+                        console.log("done!");
+                        window.location.reload();
+                    });
+                }
+
+                function ajaxSessionExpired() {
+                    $('#sessionTimeoutModal').modal("show");
+                }
+
+                function hideSessionTimeoutModal() {
+                    $('#sessionTimeoutModal').modal("hide");
+                }
+
+                /*disable datatable warnings*/
+                $.fn.dataTable.ext.errMode = 'none';
+                
+                $.extend( true, $.fn.dataTable.defaults, {
+                    language: {
+                        "emptyTable": 'Tidak ada data didalam tabel',
+                        "info": 'Menampilkan _START_ sampai _END_ dari _TOTAL_ entri',
+                        "infoEmpty": 'Menampilkan 0 sampai 0 dari 0 entri',
+                        "infoFiltered": '(tersaring dari _MAX_ total entri)',
+                        "lengthMenu": 'Tampilkan _MENU_ entri',
+                        "loadingRecords": 'Memuat...',
+                        "processing": 'Memproses...',
+                        "search": 'Cari:',
+                        "zeroRecords": 'Data tidak ditemukan',
+                        "paginate": {
+                            "first":      '<<',
+                            "last":       '>>',
+                            "next":       '>',
+                            "previous":   '<'
+                        }
+                    },
+                });
+                $('table.table.table-custom').css("width", "100%");
+                
+                $.showNotification = function (notifType, text, placementFrom, placementAlign, animateEnter, animateExit) {
+                    $.notify({
+                        message: text
+                    }, {
+                        type: notifType, // danger | success | warning
+                        //delay: 0, // debug notification
+                        spacing: 0,
+                        allow_dismiss: false,
+                        width: '',
+                        placement: {
+                            from: placementFrom,
+                            align: placementAlign
+                        },
+                        animate: {
+                            enter: animateEnter,
+                            exit: animateExit
+                        },
+                    });
+                    $('[data-notify="container"]').css('z-index', '1150');
+                }
+
+                function change_password() {
+                    location.href = $.profileUrl + "/change-password";
+                }
+                function logout() {
+                    location.href = "/funder/logout";
+                }
+                
+                function loadRdlBalance() {
+                    if ($('.rdl-account-balance').length > 0) {
+                        
+                        // for funding page
+                        $('.rdl-balance-input').closest('.form-group').find('label.error').remove();
+                        $('.rdl-balance-input').val('Memuat saldo RDF');
+                        
+                        // for withdrawal page
+                        $('.rdl-withdrawal-balance .form-group').html('Memuat saldo RDF');
+                        
+                        $.ajax({
+                            method: "GET",
+                            url: "/funder/api/rdl-balance",
+                            data: {}
+                        }).done(function( result ) {
+                            var options = getNumericOptions();
+                            $('.rdl-account-balance').html(AutoNumeric.format(result.balanceWithHoldAmount, options));
+                            
+                            // for funding form
+                            $('.rdl-balance-input').val(AutoNumeric.format(result.balanceWithHoldAmount, options));
+                            $('.rdl-balance-input').attr('data-rdl-balance', result.balanceWithHoldAmount);
+                            
+                            // for deposit page
+                            $('.rdl-account-number').html(result.accountNumber);
+                            $('.rdl-customer-name').html(result.customerName);
+                            
+                            // for withdrawal page
+                            $('.rdl-withdrawal-balance .form-group').html(AutoNumeric.format(result.balanceWithHoldAmount, options));
+                            $('.rdl-withdrawal-balance').attr('data-rdl-balance', result.balanceWithHoldAmount);
+
+                        }).fail(function(jqXHR, textStatus, errorThrown) {
+                            
+                            // for funding form
+                            $('.rdl-balance-input').val('');
+                            $('.rdl-balance-input').closest('.form-line')
+                                    .after('<label class="error" style="margin-bottom: -10px; margin-top: 3px;">' 
+                                    + 'Saldo gagal dimuat, <span onclick="loadRdlBalance()"><b style="cursor: pointer;">refresh</b></span> untuk coba kembali.' 
+                                    + '</label>');
+                            
+                            // for withdrawal form
+                            $('.rdl-withdrawal-balance .form-group').html('Saldo gagal dimuat, <span onclick="loadRdlBalance()"><b style="cursor: pointer;">refresh</b></span> untuk coba kembali.');
+                            
+                        });
+                    }
+                }
+      
+       /* notification */
+                var notificationResult =  $('#notificationResult');
+                var notificationCount = $('#countNotification');
+                var loadingCount = false;
+                var totalNotification = 0;
+                var profileUrl = "/funder";            
+                var data = {
+                    'id' : '2c9180827984d5210179896e9c30075b'
+                };
+
+                $(document).apiLenderNotification(profileUrl, data).done(function( result ) {
+                    
+                    // jika notifikasi ada, maka masukkan result.data ke dalam results global
+                    if(result.data){
+                        result = result.data;
+                    }
+                    
+                    // jika ada notifikasi maka memanggil yang if, jika tidak ada masuk ke else
+                    if(result.length > 0){
+                    // untuk memanggil seluruh notifikasi dengan cara melooping
+                    for(var i = 0; i < result.length; i++){
+                        
+                        // untuk nmemanggil notificakasi satu per satu
+                        var html = "";
+                        
+                        // untuk membedakan desain tanggal  di indonesia dan inggris
+                        var date = "";
+                        if("in" == "in"){
+                            date = moment(result[i].createdDate).lang('id').format('LL');
+                        }else{
+                            date = moment(result[i].createdDate).lang('en').format('LL');
+                        }
+                        
+                        
+                        html += '<li class="border-bottom">'+
+                            '<a class="notificationSelect" onclick="notificationisRead(' + "'"+ result[i].id + "'" +')" id="notificationIsRead'+ result[i].id +'">' +
+                            '<div class="d-flex">'+
+                                '<div class="notification-icon flex-shrink-0">'+
+                                    '<span class="text-info ti-info-alt"></span>'+
+                                '</div>'+
+                                '<div class="flex-grow-1">'+
+                                    '<div>' + date + '</div>'+
+                                    '<div>'+
+                                        result[i].activityMessage + 
+                                    '</div>';
+                            
+                                // jika ada alasan maka tampilkan alasannya
+                                if(result[i].action && result[i].action.reason){
+                                    html += '<div style="font-size: 8pt">  '+ 'Alasan' +' :  </div>' + 
+                                        '<div class="notification-detail-content-notification" style="width: 240px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">' + 
+                                            result[i].action.reason +
+                                         '</div>';
+                                }
+                                
+                                
+                            html+=   '</div>' +
+                            '</div>' +
+                        '</a></li>';
+                        
+                        // tambahkan satu persatu html yang sudah dibundle tadi
+                        notificationResult.append(html);
+                        
+                        // ini apabila notifikasi belum di read dan di bold
+                        if(!result[i].isRead){
+                                totalNotification += 1;
+                                if(totalNotification > 9){
+                                    notificationCount.html("9+");
+                                }else if(totalNotification > 0 && totalNotification <= 9){
+                                    notificationCount.html(totalNotification);
+                                }else{
+                                    notificationCount.html("");
+                                }
+                                notificationResult.find('#notificationIsRead'+ result[i].id).css("font-weight", "bold");
+                        }
+                        }
+                        
+                    }else{
+                        notificationResult.append(' <li class="border-bottom">'+
+                        '<div class="d-flex">'+
+                            '<div class="flex-grow-1">'+
+                                '<div class="text-center">Tidak ada notifikasi</div>'+
+                            '</div>'+
+                        '</div>'+
+                    '</li>');   }
+                });
+                        
+        
+                function notificationisRead(notificationId){
+                    
+                    var idNotification = {
+                        'id' : notificationId
+                    };
+                   
+                    $(document).apiLenderNotificationIsRead(profileUrl, idNotification).done(function( result ) {
+                        if(result.action.url){
+                            var message = '' + result.action.url;
+                            location.href = message;
+                        }
+                        var nRCustom = $('[id=notificationIsRead' + result.id +']');
+                        if(nRCustom.css("font-weight") !== '400'){
+                            nRCustom.css("font-weight", "normal");
+                            var notificationCount = $('#countNotification');
+                            totalNotification -= 1;
+                            if(totalNotification > 9){
+                                notificationCount.html("9+");
+                            }else if(totalNotification > 0 && totalNotification <= 99){
+                                notificationCount.html(totalNotification);
+                            }else{
+                                notificationCount.html("");
+                            }
+                        }
+                    });
+                }
+                
+                function seeAllNotification() {
+                    window.location.href = $.profileUrl + '/see-all-notifications';
+                }
+                
+                function gotoCTA(obj) {
+                    location.href = $(obj).attr('data-cta');
+                }
+        
+		</script>
+		<!-- Modal -->
+		<div id="modalLengkapiProfil" class="modal fade modal-standard" data-keyboard="false" tabindex="-1"
+			role="dialog" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-body" style="padding: 0px;">
+						<div id='' style="height: 100%;">
+							<div class="swal-icon swal-icon--warning">
+								<span class="swal-icon--warning__body"><span class="swal-icon--warning__dot"></span></span>
+							</div>
+							<h4>Lengkapi Profilmu Untuk Aktivasi Akun dan RDF (Rekening Dana Funder)</h4>
+							<div class="notif">Aktifkan RDF dengan melengkapi profilmu untuk dapatkan pengalaman
+								pendanaan yang lebih cepat dan mudah.</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-primary btn-cta-yellow" onclick="gotoCTA(this)" data-cta="/funder/verificationform-rdf">Lengkapi Profil Sekarang</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+			type="text/javascript"></script>
+
+		<script>
+			$(document).ready(function(){
+
+            // var myVideo = document.getElementById("video1"); 
+
+            // function playPause() { 
+            //   if (myVideo.paused) { 
+            //     myVideo.play(); 
+            //   }
+            //   else { 
+            //     myVideo.pause(); 
+            //   }
+            // } 
+            $('.company-item').click(function() {
+                var modal = $(this).attr('targetmodal');
+                // var videoid = $(this).attr('targetvideo');
+                // var myVideo = document.getElementById(videoid); 
+                if( $('#ismobile').css('display')=='none') {
+                    console.log(modal);
+                    // console.log(video);
+                    $(modal).modal('show');
+                    // myVideo.play(); 
+                }else{
+
+                    // var video = $(this).attr('targetvideo');
+                    // myVideo.pause(); 
+                    var url = $(this).attr('targeturl');
+                    if(typeof url != 'undefined'){
+                        window.location.href = url;
+                    }
+                    // myVideo.stop(); 
+                }
+              
+            });
+
+            $(".company-img").owlCarousel({
+                autoplay: false,
+                autoplayHoverPause: true,
+                items: 1,
+                nav: true,
+                smartSpeed: 800,
+                navText: ['<div class="owl-nav-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"></path></svg></div>','<div class="owl-nav-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z"></path></svg></div>'],
+                dots: false
+            });
+            // INITIATE
+
+            // $('#company-list #company-container').removeClass('list-view').addClass('grid-view');
+            // $('.company-item-list').hide();
+            // $('.company-item-grid').show();
+             $('#company-list #company-container').removeClass('grid-view').addClass('list-view');
+                    $('.company-item-list').show();
+                    $('.company-item-grid').hide();
+
+            // END INITIATE
+            $('.button-view').on('click',function(e) {
+                // alert("Clicked");
+                $('.button-view').removeClass('active');
+                $(this).addClass('active');
+                if ($(this).hasClass('grid')) {
+                    $('#company-list #company-container').removeClass('list-view').addClass('grid-view');
+                    $('.company-item-list').hide();
+                    $('.company-item-grid').show();
+                }
+                else if($(this).hasClass('list')) {
+                    $('#company-list #company-container').removeClass('grid-view').addClass('list-view');
+                    $('.company-item-list').show();
+                    $('.company-item-grid').hide();
+                }
+            });
+            $('.search-close').on('click',function(e) {
+                $('.expanded-search').removeClass('d-flex').addClass('d-none');
+            });
+            $('i.search').on('click',function(e) {
+                $('.expanded-search').removeClass('d-none').addClass('d-flex');
+                $('#search_bar').focus();
+            });
+
+
+            $('h5.report-currency').each(function(index, element) {
+                //var options = getNumericOptions();
+                var data = $(element).text();
+                //$(element).text(AutoNumeric.format(data, options));
+                $(element).text('Rp ' + convertToShortCurency(data));
+                $(element).removeClass('invisible');
+            });
+            
+            
+        })
+
+        function getNumericOptions () {
+            var symbolIsPrefix = true;
+            var symbol = 'Rp';
+            var options = {
+                modifyValueOnWheel      : false,
+                digitGroupSeparator		: '.',
+                decimalCharacter		: ',',
+                maximumValue            : Number.MAX_SAFE_INTEGER,
+                currencySymbol			: symbolIsPrefix ? symbol + ' ' : ' ' + symbol,
+                currencySymbolPlacement	: symbolIsPrefix ? AutoNumeric.options.currencySymbolPlacement.prefix : AutoNumeric.options.currencySymbolPlacement.suffix, 
+            };
+
+            return options;
+        }
+        
+        function showModalLengkapiProfil() {
+            $('#modalLengkapiProfil').modal('show');
+        }
+        
+		</script>
+</body>
+
+</html>
